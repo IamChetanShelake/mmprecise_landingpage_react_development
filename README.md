@@ -1,1 +1,2 @@
-"# mmprecise_landingpage_react_development" 
+# MM-Precise - Frontend 
+by Tejas Derle
