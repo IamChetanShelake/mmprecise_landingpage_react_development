@@ -1,6 +1,12 @@
 import Home from './Home';
+import About from './About';
+import Leadership from './Leadership';
+import Expertise from './Expertise';
 
 
 export {
-    Home
+    Home,
+    About,
+    Leadership,
+    Expertise
 }

@@ -3,6 +3,7 @@ import { CgArrowTopRight } from 'react-icons/cg';
 import { images } from '../assets';
 import { FaWhatsapp } from 'react-icons/fa';
 import TestimonialCard from '../components/TestimonialCard';
+import BackGround from '../assets/BackGround.png';
 
 const partners = [
   { img: "/images/logo1.png", name: "Logoipsum" },
@@ -74,8 +75,7 @@ function Home() {
 
       <section
         className="relative w-full h-[90vh] flex items-center justify-center bg-cover bg-center"
-        style={{ backgroundImage: "url('/images/Background.png')" }} // replace with actual path
-      >
+        style={{ backgroundImage: `url(${BackGround})` }}      >
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/50"></div>
 

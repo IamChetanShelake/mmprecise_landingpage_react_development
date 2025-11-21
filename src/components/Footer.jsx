@@ -1,6 +1,5 @@
 import { FaCertificate, FaFacebook, FaHeart, FaInstagram, FaLeaf, FaLinkedin, FaPhone, FaYoutube } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
-import { IoLogoInstagram } from "react-icons/io";
 import { IoMail } from "react-icons/io5";
 import { LiaCertificateSolid } from "react-icons/lia";
 import { MdSecurity } from "react-icons/md";
