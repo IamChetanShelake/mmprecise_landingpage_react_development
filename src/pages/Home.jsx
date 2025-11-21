@@ -1,6 +1,8 @@
 import React from 'react'
 import { CgArrowTopRight } from 'react-icons/cg';
 import { images } from '../assets';
+import { FaWhatsapp } from 'react-icons/fa';
+import TestimonialCard from '../components/TestimonialCard';
 
 const partners = [
   { img: "/images/logo1.png", name: "Logoipsum" },
@@ -45,9 +47,63 @@ const stats = [
   { value: "5,000", label: "TONNES SAVED" },
 ];
 
+const testimonials = [
+  {
+    quote: "MM Precise has been instrumental in delivering our most complex structural projects. Their expertise consistently exceeds expectations.",
+    name: "Rajesh Kumar",
+    designation: "Project Director, Larsen & Toubro",
+    image: "/images/rajesh.jpg",
+  },
+  {
+    quote: "The team's technical expertise and commitment to sustainable practices make them our preferred partner.",
+    name: "Priya Sharma",
+    designation: "Chief Engineer, Tata Projects",
+    image: "/images/priya.jpg",
+  },
+  {
+    quote: "Their innovation and reliability helped us complete major projects efficiently and sustainably.",
+    name: "Amit Verma",
+    designation: "Senior Manager, XYZ Corp",
+    image: "/images/amit.jpg",
+  },
+];
+
 function Home() {
   return (
-    <div className='' >
+    <div className='flex flex-col items-center justify-center' >
+
+      <section
+        className="relative w-full h-[90vh] flex items-center justify-center bg-cover bg-center"
+        style={{ backgroundImage: "url('/images/Background.png')" }} // replace with actual path
+      >
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/50"></div>
+
+        {/* Content */}
+        <div className="relative text-start px-6 md:px-10 max-w-5xl mx-auto">
+          <h1 className="text-3xl md:text-5xl font-bold text-white leading-tight">
+            PRECISION IN EVERY SPAN.<br />
+            <span className="text-primary">EXCELLENCE IN EVERY STRUCTURE.</span>
+          </h1>
+
+          <p className="text-gray-200 mt-4 text-sm md:text-base">
+            Delivering turnkey industrial projects with innovation & sustainability.
+          </p>
+
+          <button className="mt-6 px-6 py-3 bg-primary hover:bg-orange-600 text-white rounded-full flex gap-2 mx-auto active:scale-95 transition">
+            EXPLORE PROJECTS
+            <CgArrowTopRight className="w-5 h-5" />
+          </button>
+        </div>
+
+        {/* WhatsApp Button */}
+        <div className="absolute bottom-6 right-6">
+          <button className="bg-orange-500 text-white p-3 rounded-full shadow-lg hover:bg-orange-600 transition">
+            <FaWhatsapp />
+          </button>
+        </div>
+      </section>
+
 
       <section className=" flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-10 md:py-16 gap-10">
 
@@ -73,7 +129,7 @@ function Home() {
           </p>
 
           {/* Button */}
-          <button className="mt-6 flex items-center gap-2 border border-orange-400 text-primary px-6 py-2 rounded-full hover:bg-orange-50 transition active:scale-95">
+          <button className="mt-6 flex items-center gap-2 border border-prtext-primary text-primary px-6 py-2 rounded-full hover:bg-orange-50 transition active:scale-95">
             About Us
             <CgArrowTopRight className="w-5 h-5" />
           </button>
@@ -111,8 +167,8 @@ function Home() {
 
       {/* ACHIEVEMENTS & AWARDS */}
       <section className="text-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <h2 className="text-2xl font-semibold mb-2">ACHIEVEMENTS & AWARDS</h2>
-        <p className="text-[#1e1e1e] mb-8">
+        <h2 className="text-2xl font-bold text-gray-800">ACHIEVEMENTS & AWARDS</h2>
+        <p className="text-[#1e1e1e] mb-8 mt-2">
           Recognized for excellence and innovation in structural engineering
         </p>
 
@@ -145,17 +201,25 @@ function Home() {
 
 
       {/* Testominical */}
-      <div className="text-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <h2 className="text-2xl font-semibold mb-2">What Our Clients Say</h2>
-        <p className="text-[#1e1e1e] mb-8">
-          Trusted by industry leaders for excellence and innovation
-        </p>
-      </div>
+      <section className="py-10 max-w-6xl mx-auto px-4">
+        <div className="text-center mb-8">
+          <h2 className="text-2xl font-bold text-gray-800">What Our Clients Say</h2>
+          <p className="text-[#1e1e1e] mb-8 mt-2">
+            Trusted by industry leaders for excellence and innovation
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-6">
+          {testimonials.map((item, index) => (
+            <TestimonialCard key={index} testimonial={item} />
+          ))}
+        </div>
+      </section>
 
       {/* Our Partner */}
       <div className="text-center max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <h2 className="text-2xl font-semibold mb-2">Our Partner</h2>
-        <p className="text-[#1e1e1e] mb-8">
+        <h2 className="text-2xl font-bold text-gray-800">Our Partner</h2>
+        <p className="text-[#1e1e1e] mb-8 mt-2">
           Trusted partners who help us deliver excellence across every project.
         </p>
 
