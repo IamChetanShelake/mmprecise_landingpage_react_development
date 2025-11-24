@@ -4,6 +4,7 @@ import Leadership from './Leadership';
 import Expertise from './Expertise';
 import Careers from './Careers';
 import Contact from './Contact';
+import NewsUpdates from './NewsUpdates';
 
 
 export {
@@ -12,5 +13,6 @@ export {
     Leadership,
     Expertise,
     Careers,
-    Contact
+    Contact,
+    NewsUpdates
 }
