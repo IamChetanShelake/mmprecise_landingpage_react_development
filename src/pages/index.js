@@ -5,6 +5,8 @@ import Expertise from './Expertise';
 import Careers from './Careers';
 import Contact from './Contact';
 import NewsUpdates from './NewsUpdates';
+import CSR from './CSR';
+import MediaCoverage from './MediaCoverage';
 
 
 export {
@@ -14,5 +16,7 @@ export {
     Expertise,
     Careers,
     Contact,
-    NewsUpdates
+    NewsUpdates,
+    MediaCoverage,
+    CSR
 }
