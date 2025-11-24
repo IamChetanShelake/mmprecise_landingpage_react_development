@@ -260,7 +260,7 @@ function Navbar() {
 
         {/* Contact Button */}
         <button className="hidden md:flex items-center gap-2 bg-white border border-primary ml-20 px-9 py-2 rounded-full transition-all duration-200 hover:shadow-md">
-          <span>Contact Us</span>
+          <Link to="/contact">Contact Us</Link>
           <CgArrowTopRight className="w-5 h-5" />
         </button>
 

@@ -3,6 +3,7 @@ import About from './About';
 import Leadership from './Leadership';
 import Expertise from './Expertise';
 import Careers from './Careers';
+import Contact from './Contact';
 
 
 export {
@@ -10,5 +11,6 @@ export {
     About,
     Leadership,
     Expertise,
-    Careers
+    Careers,
+    Contact
 }
