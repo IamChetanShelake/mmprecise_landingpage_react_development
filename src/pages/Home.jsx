@@ -3,7 +3,7 @@ import { CgArrowTopRight } from 'react-icons/cg';
 import { images } from '../assets';
 import { FaWhatsapp } from 'react-icons/fa';
 import TestimonialCard from '../components/TestimonialCard';
-import BackGround from '../assets/BackGround.png';
+import BackGround from '../assets/images/BackGround.png';
 
 const partners = [
   { img: "/images/logo1.png", name: "Logoipsum" },

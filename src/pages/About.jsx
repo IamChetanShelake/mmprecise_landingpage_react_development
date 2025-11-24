@@ -1,10 +1,10 @@
 import React from 'react'
 import { images } from '../assets'
-import { CgArrowTopRight } from 'react-icons/cg'
-import Memberships1 from "../assets/Memberships1.png";
-import Memberships2 from "../assets/Memberships2.png";
-import Memberships3 from "../assets/Memberships3.png";
-import Memberships4 from "../assets/Memberships4.png";
+// import { CgArrowTopRight } from 'react-icons/cg'
+// import Memberships1 from "../assets/Memberships1.png";
+// import Memberships2 from "../assets/Memberships2.png";
+// import Memberships3 from "../assets/Memberships3.png";
+// import Memberships4 from "../assets/Memberships4.png";
 
 
 function About() {
@@ -17,22 +17,22 @@ function About() {
 
   const memberships = [
   {
-    img: Memberships4,
+    img: `${images.Memberships4}`,
     title: "Chartered Engineer",
     description: "IEI India",
   },
   {
-    img: Memberships3,
+    img: `${images.Memberships3}`,
     title: "Association of Consulting Civil Engineers",
     description: "IEI India",
   },
   {
-    img: Memberships2,
+    img: `${images.Memberships2}`,
     title: "Ferrocement Society",
     description: "Pune",
   },
   {
-    img: Memberships1,
+    img: `${images.Memberships1}`,
     title: "Architect & Engineers Association",
     description: "Nashik",
   },

@@ -1,13 +1,20 @@
-import logo from './logo.svg'
-import BackGround from './BackGround.png'
-import Quote from './Quote.png'
-import EXPERTISE1 from './EXPERTISE1.png'
-import EXPERTISE2 from './EXPERTISE2.png'
-import EXPERTISE3 from './EXPERTISE3.png'
-import Vision from './vision.png'
-import Mission from './Mission.png'
-import OurTeam from './OurTeam.png'
-import award from './award1.png'
+import logo from './images/logo.svg'
+import BackGround from './images/BackGround.png'
+import Quote from './images/Quote.png'
+import EXPERTISE1 from './images/EXPERTISE1.png'
+import EXPERTISE2 from './images/EXPERTISE2.png'
+import EXPERTISE3 from './images/EXPERTISE3.png'
+import Vision from './images/vision.png'
+import Mission from './images/Mission.png'
+import OurTeam from './images/OurTeam.png'
+import award from './images/award1.png'
+import careers1 from './images/careers1.png'
+import careers2 from './images/careers2.jpg'
+import Memberships1 from "./images/Memberships1.png";
+import Memberships2 from "./images/Memberships2.png";
+import Memberships3 from "./images/Memberships3.png";
+import Memberships4 from "./images/Memberships4.png";
+
 
 export const images = {
     logo,
@@ -19,5 +26,24 @@ export const images = {
     Vision,
     Mission,
     OurTeam,
-    award
+    award,
+    careers1,
+    careers2,
+    Memberships1,
+    Memberships2,
+    Memberships3,
+    Memberships4,
+}
+
+
+// Icons
+
+import idea from './icons/idea.svg'
+import location from './icons/location.svg'
+import work from './icons/work.svg'
+import workOutline from './icons/work-outline.svg'
+
+
+export const icons = {
+    idea, location, work, workOutline
 }

@@ -3,7 +3,7 @@ import { images } from '../assets'
 import { TbPercentage } from "react-icons/tb";
 import { FaClock, FaLeaf } from "react-icons/fa";
 import { MdSecurity } from 'react-icons/md';
-import expertiseImg from '../assets/EXPERTISE3.png';
+import expertiseImg from '../assets/images/EXPERTISE3.png';
 function Expertise() {
 
 
