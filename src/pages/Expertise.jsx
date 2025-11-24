@@ -12,7 +12,7 @@ function Expertise() {
             icon: <TbPercentage />,
             title: "Material Savings",
             description: "Up to 30% reduction in concrete and steel consumption through optimized design",
-        },
+        }, 
         {
             icon: <FaClock />,
             title: "Faster  Construction",
@@ -47,7 +47,7 @@ function Expertise() {
                 </div>
             </section>
 
-            <section className="flex flex-col my-6 md:flex-row items-center justify-center gap-10 max-md:px-4">
+            <section className="flex flex-col my-16 md:flex-row items-center justify-center gap-10 max-md:px-4">
                 <div className="relative shadow-2xl shadow-indigo-600/40 rounded-2xl overflow-hidden shrink-0">
                     <img
                         className="max-w-md w-full object-cover rounded-2xl"
@@ -69,7 +69,7 @@ function Expertise() {
                 </div>
             </section>
 
-            <section className="flex my-10 flex-col md:flex-row items-center justify-center gap-10 max-md:px-4">
+            <section className="flex my-16 flex-col md:flex-row items-center justify-center gap-10 max-md:px-4">
                 <div className="text-sm text-black max-w-lg">
                     <h1 className="text-xl uppercase font-bold ">
                         Industrial Construction
@@ -93,7 +93,7 @@ function Expertise() {
             </section>
 
 
-            <section className="flex flex-col my-4 items-center justify-center mx-auto max-md:mx-2 max-md:px-2 max-w-5xl w-full text-center py-16 bg-slate-100/70">
+            <section className="flex flex-col my-16 items-center justify-center mx-auto max-md:mx-2 max-md:px-2 max-w-5xl w-full text-center py-16 bg-slate-100/70">
                 <h1 className="text-2xl md:text-3xl font-bold text-primary max-w-2xl mt-5">
                     Why Choose MM Precise?
                 </h1>

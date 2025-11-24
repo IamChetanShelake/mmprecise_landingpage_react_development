@@ -20,20 +20,20 @@ const partners = [
 
 const achievements = [
   {
-    img: "/images/award1.png", // Replace with real image path
+    img: `${images.award}`, // Replace with real image path
     title: "PROMISING ENGINEER AWARD 2022 – IEI NASHIK",
     description:
       "Recognition for outstanding contribution to structural engineering innovation.",
   },
   {
-    img: "/images/award1.png",
+    img: `${images.award}`,
     title:
       "OUTSTANDING CONCRETE STRUCTURE AWARD 2023 – ACCE NASHIK & ULTRATECH",
     description:
       "Advanced engineering for large-scale structures requiring exceptional load capabilities.",
   },
   {
-    img: "/images/award1.png",
+    img: `${images.award}`,
     title:
       "WORLD RECORD HOLDER – WORLD RECORD OF INDIA, 2023",
     description:
