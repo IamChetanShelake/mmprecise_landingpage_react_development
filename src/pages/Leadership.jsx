@@ -65,6 +65,32 @@ function Leadership() {
   return (
     <div className='' >
 
+      <div className="flex flex-col items-center text-center p-4 max-w-7xl mx-auto">
+        <button className="border rounded-full px-4 py-1 mb-4 hover:bg-gray-100 transition-colors">
+          Hello
+        </button>
+
+        <h1 className="text-2xl font-bold mb-2">
+          I'M <span className="text-orange-500">ER. MAYUR JAIN</span>
+        </h1>
+
+        <h2 className="text-lg font-semibold mb-6">FOUNDER & MANAGING DIRECTOR</h2>
+        <div className="flex items-center justify-center gap-10">
+
+          <blockquote className="italic w-xl text-sm mb-4">
+            "Engineering excellence is not just about building structures, it's about creating solutions that stand the test of time while respecting our environment and community."
+          </blockquote>
+          <div className="relative w-full max-w-md flex flex-col items-center">
+            <img src={images.Owner} alt="Profile" className="w-64 mb-4" />
+          </div>
+          <div className="flex flex-col items-center">
+            <span className="text-orange-500">★★★★★</span>
+            <p className="font-bold">15 Years</p>
+            <p className="text-sm">Experience</p>
+          </div>
+        </div>
+      </div>
+
       {/* ACHIEVEMENTS & AWARDS */}
       <section className="text-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <h2 className="text-2xl font-bold text-gray-800">ACHIEVEMENTS & AWARDS</h2>
