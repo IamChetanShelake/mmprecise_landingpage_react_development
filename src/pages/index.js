@@ -8,6 +8,8 @@ import NewsUpdates from './NewsUpdates';
 import CSR from './CSR';
 import MediaCoverage from './MediaCoverage';
 import Projects from './Projects';
+import ProjectDetails from './ProjectDetails';
+import NewsUpdatesDetails from './NewsUpdatesDetails';
 
 
 export {
@@ -20,5 +22,7 @@ export {
     NewsUpdates,
     MediaCoverage,
     CSR,
-    Projects
+    Projects,
+    ProjectDetails,
+    NewsUpdatesDetails
 }

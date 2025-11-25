@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Container from "../assets/images/Container.png";
 import { BsGraphUpArrow } from "react-icons/bs";
 import { icons, images } from "../assets";
+import { Link } from "react-router-dom";
 
 function Projects() {
     const [activeTab, setActiveTab] = useState("ongoing");
@@ -16,11 +17,7 @@ function Projects() {
             completion: "Q2 2025",
             status: "completed",
             image: "/project-img.jpg",
-            tags: [
-                { icon: `${icons.layer}`, text: "Post-Tensioning", color: "bg-orange-600" },
-                { icon: `${icons.cube}`, text: "Fibre Concrete", color: "bg-gray-900" },
-                { icon: `${icons.leaf}`, text: "Green Building", color: "bg-green-600" },
-            ],
+            
         },
         {
             id: 2,
@@ -31,11 +28,7 @@ function Projects() {
             completion: "Q2 2025",
             status: "ongoing",
             image: "/project-img.jpg",
-            tags: [
-                { icon: `${icons.layer}`, text: "Post-Tensioning", color: "bg-orange-600" },
-                { icon: `${icons.cube}`, text: "Fibre Concrete", color: "bg-gray-900" },
-                { icon: `${icons.leaf}`, text: "Green Building", color: "bg-green-600" },
-            ],
+            
         },
         {
             id: 3,
@@ -46,11 +39,7 @@ function Projects() {
             completion: "Q2 2025",
             status: "completed",
             image: "/project-img.jpg",
-            tags: [
-                { icon: `${icons.layer}`, text: "Post-Tensioning", color: "bg-orange-600" },
-                { icon: `${icons.cube}`, text: "Fibre Concrete", color: "bg-gray-900" },
-                { icon: `${icons.leaf}`, text: "Green Building", color: "bg-green-600" },
-            ],
+            
         },
         {
             id: 4,
@@ -61,11 +50,7 @@ function Projects() {
             completion: "Q2 2025",
             status: "ongoing",
             image: "/project-img.jpg",
-            tags: [
-                { icon: `${icons.layer}`, text: "Post-Tensioning", color: "bg-orange-600" },
-                { icon: `${icons.cube}`, text: "Fibre Concrete", color: "bg-gray-900" },
-                { icon: `${icons.leaf}`, text: "Green Building", color: "bg-green-600" },
-            ],
+            
         },
     ];
 
@@ -161,40 +146,56 @@ function Projects() {
                                 <div className="flex flex-col p-4">
                                     <div className="flex justify-between items-start mb-4">
                                         <h3 className="text-xl font-bold">{project.title}</h3>
-                                        <img src={icons.Plus} alt="View more" className="w-8 h-8" />
+                                        <Link to={`/project-details`}>
+                                            <img
+                                                src={icons.Plus}
+                                                alt="View more"
+                                                className="w-8 h-8 cursor-pointer hover:scale-110 transition"
+                                            />
+                                        </Link>
                                     </div>
 
                                     <div className="flex flex-col md:flex-row justify-between mb-4">
-                                        <div className="text-[14px] space-y-1 mb-4 md:mb-0">
+                                        <div className="text-[14px] space-y-2 mb-4 md:mb-0">
                                             <p className="flex items-center">
                                                 <img src={icons.Span} alt="span" className="mr-2 w-4 h-4" />
-                                                <strong>Span:</strong> {project.span}
+                                                <p className="text-sm font-semibold">Span:</p >
+                                                <p className="text-sm px-2 ">{project.span}</p>
                                             </p>
                                             <p className="flex items-center">
                                                 <img src={icons.Area} alt="area" className="mr-2 w-4 h-4" />
-                                                <strong>Area:</strong> {project.area}
+                                                <p className="text-sm font-semibold">Area:</p>
+                                                <p className="text-sm px-2 ">{project.area}</p>
                                             </p>
                                             <p className="flex items-center">
                                                 <img src={icons.Technology} alt="technology" className="mr-2 w-4 h-4" />
-                                                <strong>Technology:</strong> {project.tech}
+                                                <p className="text-sm font-semibold">Technology:</p >
+                                                <p className="text-sm px-2 ">{project.tech}</p>
                                             </p>
                                             <p className="flex items-center">
                                                 <img src={icons.Completion} alt="completion" className="mr-2 w-4 h-4" />
-                                                <strong>Completion:</strong> {project.completion}
+                                                <p className="text-sm font-semibold">Completion:</p>
+                                                <p className="text-sm px-2 ">{project.completion}</p>
                                             </p>
                                         </div>
                                     </div>
 
                                     {/* Tags */}
-                                    <div className="flex flex-wrap">
-                                        {project.tags.map((tag, i) => (
-                                            <div key={i} className={`flex items-center mr-2 mt-2 text-white text-xs py-1 px-3 rounded-full ${tag.color}`}>
-                                                <img src={tag.icon} alt="tag-icon" className="w-4 h-4 mr-1" />
-                                                <span className="text-white text-sm">
-                                                    {tag.text}
-                                                </span>
-                                            </div>
-                                        ))}
+                                    <div className="flex flex-wrap my-6">
+                                        <div className="flex items-center mr-2 mt-2 text-white text-xs py-1 px-3 rounded-full bg-orange-600">
+                                            <img src={icons.layer} alt="tag-icon" className="w-4 h-4 mr-1" />
+                                            <span className="text-white text-sm">Post-Tensioning</span>
+                                        </div>
+
+                                        <div className="flex items-center mr-2 mt-2 text-white text-xs py-1 px-3 rounded-full bg-gray-900">
+                                            <img src={icons.cube} alt="tag-icon" className="w-4 h-4 mr-1" />
+                                            <span className="text-white text-sm">Fibre Concrete</span>
+                                        </div>
+
+                                        <div className="flex items-center mr-2 mt-2 text-white text-xs py-1 px-3 rounded-full bg-green-600">
+                                            <img src={icons.leaf} alt="tag-icon" className="w-4 h-4 mr-1" />
+                                            <span className="text-white text-sm">Green Building</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
