@@ -14,6 +14,8 @@ import Memberships1 from "./images/Memberships1.png";
 import Memberships2 from "./images/Memberships2.png";
 import Memberships3 from "./images/Memberships3.png";
 import Memberships4 from "./images/Memberships4.png";
+import csr from "./images/csr.png";
+import Owner from "./images/Owner.png";
 
 
 export const images = {
@@ -33,6 +35,8 @@ export const images = {
     Memberships2,
     Memberships3,
     Memberships4,
+    csr,
+    Owner
 }
 
 
