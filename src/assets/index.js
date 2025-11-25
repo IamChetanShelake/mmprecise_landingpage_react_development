@@ -42,8 +42,19 @@ import idea from './icons/idea.svg'
 import location from './icons/location.svg'
 import work from './icons/work.svg'
 import workOutline from './icons/work-outline.svg'
+import Plus from './icons/Plus.svg'
+import Span from './icons/Span.svg'
+import Completion from './icons/Completion.svg'
+import Technology from './icons/Technology.svg'
+import Area from './icons/Area.svg'
+import leaf from './icons/leaf.svg'
+import cube from './icons/cube.svg'
+import layer from './icons/layer.svg'
+import faculty from './icons/faculty.svg'
+
 
 
 export const icons = {
-    idea, location, work, workOutline
+    idea, location, work, workOutline, Plus, Span,
+    Completion, Technology,Area,layer,cube, leaf,faculty
 }

@@ -7,6 +7,7 @@ import Contact from './Contact';
 import NewsUpdates from './NewsUpdates';
 import CSR from './CSR';
 import MediaCoverage from './MediaCoverage';
+import Projects from './Projects';
 
 
 export {
@@ -18,5 +19,6 @@ export {
     Contact,
     NewsUpdates,
     MediaCoverage,
-    CSR
+    CSR,
+    Projects
 }
